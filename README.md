@@ -9,11 +9,11 @@ This repository contains the second step of the Ball and Beam project. Students 
 ```mermaid
 graph LR
     SP["🎯 Setpoint<br/>(Target Distance: e.g. 15 cm)"] --> SUM(("➕ / ➖"))
-    SUM -->|Position Error e(t)| CTRL["⚙️ Transfer Function<br/>(Controller: Binary / P / PD)"]
-    CTRL -->|Control Signal u(t)<br/>(Target Servo Angle 0°-180°)| SERVO["🦾 Servo Motor"]
-    SERVO -->|Beam Angle θ| PLANT["⚽ Ball & Beam<br/>(Physical System)"]
-    PLANT -->|Ball Distance x(t)| SENSOR["📏 HC-SR04 Sensor"]
-    SENSOR -->|Feedback Distance| SUM
+    SUM -->|"Position Error e(t)"| CTRL["⚙️ Transfer Function<br/>(Controller: Binary / P / PD)"]
+    CTRL -->|"Control Signal u(t)"| SERVO["🦾 Servo Motor"]
+    SERVO -->|"Beam Angle θ"| PLANT["⚽ Ball & Beam<br/>(Physical System)"]
+    PLANT -->|"Ball Distance x(t)"| SENSOR["📏 HC-SR04 Sensor"]
+    SENSOR -->|"Feedback Distance"| SUM
 ```
 
 ---
@@ -66,11 +66,11 @@ Students complete section **4.2 (`TRANSFORM FUNCTION`)** to test three control s
 ```mermaid
 graph LR
     SP["🎯 ערך רצוי Setpoint<br/>(מרחק מטרה: למשל 15 ס״מ)"] --> SUM(("➕ / ➖"))
-    SUM -->|שגיאת מיקום e(t)| CTRL["⚙️ פונקציית תמסורת<br/>(בקר: Binary / P / PD)"]
-    CTRL -->|אות בקרה u(t)<br/>(זווית סרוו 0°-180°)| SERVO["🦾 מנוע סרוו"]
-    SERVO -->|זווית הקורה θ| PLANT["⚽ מערכת כדור וקורה<br/>(המערכת הפיזית)"]
-    PLANT -->|מיקום הכדור x(t)| SENSOR["📏 חיישן מרחק HC-SR04"]
-    SENSOR -->|קריאת משוב Feedback| SUM
+    SUM -->|"שגיאת מיקום e(t)"| CTRL["⚙️ פונקציית תמסורת<br/>(בקר: Binary / P / PD)"]
+    CTRL -->|"אות בקרה u(t)"| SERVO["🦾 מנוע סרוו"]
+    SERVO -->|"זווית הקורה θ"| PLANT["⚽ מערכת כדור וקורה<br/>(המערכת הפיזית)"]
+    PLANT -->|"מיקום הכדור x(t)"| SENSOR["📏 חיישן מרחק HC-SR04"]
+    SENSOR -->|"קריאת משוב Feedback"| SUM
 ```
 
 ---
