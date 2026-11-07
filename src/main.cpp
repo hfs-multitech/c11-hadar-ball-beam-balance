@@ -11,8 +11,8 @@ const int SERVO_PIN = 13; // Servo signal pin
 Servo myServo;
 
 // Standard pulse widths for SG90 servo in microseconds
-const int MIN_PULSE_WIDTH = 500;  // 0 degrees
-const int MAX_PULSE_WIDTH = 2500; // 180 degrees
+const int SERVO_MIN_PULSE = 500;  // 0 degrees
+const int SERVO_MAX_PULSE = 2500; // 180 degrees
 
 // Physical system constants
 const float SETPOINT_CM = 15.0f; // Target position of ball from sensor (cm)
